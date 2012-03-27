@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout
+	android:orientation="horizontal"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content">
+	<Button
+		android:id="@+id/deleteEntry"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:text="Delete"
+		android:onClick="onClick"
+		/>
+	<Button
+		android:id="@+id/back"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:text="Back"
+		android:onClick="onClick"
+		/>
+</LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:hint="Enter new roll number"
+        android:inputType="numberSigned"
+        android:digits="1234567890"
+        android:imeOptions="actionDone"/>
+    <Button 
+        android:id="@+id/addRollno"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:text="Add" 
+        android:onClick="onClick" />
+</LinearLayout>
+<View
+	android:layout_width="match_parent"
+    android:layout_height="2dip"
+    android:background="#FF909090" />
+<ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/studentsLayout"
+	>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

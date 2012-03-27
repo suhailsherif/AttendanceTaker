@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/uglyhack"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<View
+	android:layout_width="match_parent"
+    android:layout_height="2dip"
+    android:background="#FF909090" />
+<ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="0px"
+	android:layout_weight="7">
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/attendanceLayout"
+	>
+</LinearLayout>
+</ScrollView>
+<Button
+	android:id="@+id/back"
+	android:layout_width="fill_parent"
+	android:layout_height="0px"
+	android:layout_weight="1"
+	android:text="Back"
+	android:onClick="onClick"
+	/>
+</LinearLayout>
