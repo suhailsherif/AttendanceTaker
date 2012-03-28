@@ -50,10 +50,10 @@ public class takeAttendance extends Activity implements OnClickListener {
 	public void onClick(View clickedView) {
 		int viewId=clickedView.getId();
 		switch(viewId){
-		case R.id.nextScan:
+		case R.id.exitScans:
 			finish();
 			break;
-		case R.id.exitScans:
+		case R.id.nextScan:
 			scanProduct();
 			break;
 		}
